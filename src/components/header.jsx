@@ -26,7 +26,7 @@ const Header = () => {
           <ArrowUp />
         </div>
       )}
-      <div className="flex justify-center items-center gap-3 shadow bg-gray-200 mx-auto w-38 py-2 rounded-full">
+      <div className="flex justify-center items-center gap-3 shadow bg-gray-200 mx-auto w-38 py-2 rounded-full *:border-none *:focus:border-none">
         <NavLink
           to="/"
           className={({ isActive }) =>

@@ -46,7 +46,9 @@ const Homepage = () => {
   return (
     <>
       {loading ? (
-        <p className="text-center text-xl text-green-400">Loading...</p>
+        <div className="flex justify-center items-center h-[90svh]">
+          <div className="w-18 h-18 rounded-full border-1 border-l-sky-400 animate-spin "></div>
+        </div>
       ) : error ? (
         <p>Error occurs</p>
       ) : (
