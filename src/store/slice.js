@@ -3,7 +3,7 @@ import axios from "axios";
 const initialState = {
   loading: true,
   error: false,
-  data: JSON.parse(window.localStorage.getItem("cart")),
+  data: JSON.parse(window.localStorage.getItem("cart")) || [],
   cartItems: JSON.parse(window.localStorage.getItem("saved")) || [],
   total: 0,
 };
