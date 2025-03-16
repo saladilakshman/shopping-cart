@@ -51,10 +51,10 @@ export const userSlice = createSlice({
       }
     },
     lowPrice: (state) => {
-      state.data = state.data.sort((a, b) => a.price - b.price);
+      state.data = state?.data?.sort((a, b) => a.price - b.price);
     },
     highPrice: (state) => {
-      state.data = state.data.sort((a, b) => b.price - a.price);
+      state.data = state?.data?.sort((a, b) => b.price - a.price);
     },
   },
   extraReducers: (builder) => {
